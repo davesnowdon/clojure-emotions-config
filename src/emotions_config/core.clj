@@ -4,7 +4,6 @@
             [clojure.pprint :refer [pprint]]
             [clj-time.core :as t]
             [clj-time.format :as tf]
-            [naojure.core :as nao]
             [emotions.core :refer :all]
             [emotions.util :refer [float= seconds-diff]])
   (:import [javafx.fxml FXMLLoader]
@@ -26,4 +25,4 @@
 
 (defn -main
   [& args]
-  (start)
+  (start))
