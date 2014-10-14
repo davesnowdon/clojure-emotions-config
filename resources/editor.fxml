@@ -49,7 +49,7 @@
                                     <HBox prefHeight="100.0" prefWidth="200.0">
                                        <children>
                                           <Slider />
-                                          <Button mnemonicParsing="false" text="Button" />
+                                          <Button mnemonicParsing="false" text="Add Atttractor" />
                                        </children>
                                     </HBox>
                                     <FlowPane prefHeight="200.0" prefWidth="200.0">
