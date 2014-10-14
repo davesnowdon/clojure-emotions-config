@@ -15,10 +15,12 @@
   [x]
   (println x "Hello, World!"))
 
-(def stage (run-now
-            (doto
-                (.build (StageBuilder/create))
-              (.setScene (Scene. (FXMLLoader/load (clojure.java.io/resource "editor.fxml")))))))
+(def stage
+  (run-now
+   (doto
+     (.build (StageBuilder/create))
+     (.setScene (Scene. (FXMLLoader/load
+                         (clojure.java.io/resource "editor.fxml")))))))
 
 (defn start []
   (run-now (.show stage)))
