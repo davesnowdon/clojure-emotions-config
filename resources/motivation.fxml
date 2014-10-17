@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?language Clojure?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TitledPane id="motivation_x" animated="false" text="Motivation X" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Slider id="motivation_x_desire" />
+                  <Button id="motivation_x_add_attractor" mnemonicParsing="false" text="Add Atttractor" />
+               </children>
+            </HBox>
+            <FlowPane id="motivation_x_attractors" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button id="motivation_x_attractor" mnemonicParsing="false" text="Button" />
+               </children>
+            </FlowPane>
+         </children>
+      </VBox>
+   </content>
+</TitledPane>
