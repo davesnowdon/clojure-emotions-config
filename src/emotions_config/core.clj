@@ -10,17 +10,21 @@
            [javafx.stage StageBuilder]
            [javafx.scene Scene]))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn load-ui
+  "Get Main UI"
+  []
+  (FXMLLoader/load (clojure.java.io/resource "editor.fxml")))
+
+(defn load-motivation-ui
+  "Get UI template for a motivation"
+  []
+  (FXMLLoader/load (clojure.java.io/resource "motivation.fxml")))
 
 (def stage
   (run-now
    (doto
      (.build (StageBuilder/create))
-     (.setScene (Scene. (FXMLLoader/load
-                         (clojure.java.io/resource "editor.fxml")))))))
+     (.setScene (Scene. (load-ui))))))
 
 (defn start []
   (run-now (.show stage)))
