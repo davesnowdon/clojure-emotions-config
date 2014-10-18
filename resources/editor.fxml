@@ -47,8 +47,8 @@
       </ScrollPane>
       <FlowPane prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="5">
          <children>
-            <TextArea id="motivations_text" prefHeight="50.0" promptText="Motivations" />
-            <Button id="reload_button" mnemonicParsing="false" text="Reload" />
+            <TextArea id="motivations_text" fx:id="motivationText" prefHeight="50.0" promptText="Motivations" />
+            <Button id="reload_button" fx:id="motivationsReload" mnemonicParsing="false" onAction="(use 'emotions-config.bus) (push event)" text="Reload" />
          </children>
       </FlowPane>
    </children>
