@@ -8,5 +8,5 @@
                  [clj-time "0.8.0"]
                  [org.clojars.ato/clojure-jsr223 "1.5.1"]
                  [reagi "0.6.3"]
-                 [emotions "0.2.1"]]
+                 [emotions "0.2.2"]]
   :main emotions-config.core)
