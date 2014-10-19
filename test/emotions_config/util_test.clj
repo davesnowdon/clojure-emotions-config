@@ -12,9 +12,9 @@
            [javafx.scene.control ScrollPane]
            [javafx.scene.control TextArea]))
 
-(def motivation-template (load-ui))
+(def editor-template (load-ui))
 
-(def editor-template (load-motivation-ui-template))
+(def motivation-template (load-motivation-ui-template))
 
 ;; test that correct elements are returned from template
 (expect (instance? Slider
