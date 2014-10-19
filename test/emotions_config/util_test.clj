@@ -19,27 +19,27 @@
 ;; test that correct elements are returned from template
 (expect (instance? Slider
                    (get-child-by-id motivation-template
-                                    "motivation_x_desire")))
+                                    template-id-desire-slider)))
 
 (expect (instance? Button
                    (get-child-by-id motivation-template
-                                    "motivation_x_add_attractor")))
+                                    template-id-add-attractor-button)))
 
 (expect (instance? FlowPane
                    (get-child-by-id motivation-template
-                                    "motivation_x_attractors")))
+                                    template-id-motivation-attractors)))
 
 (expect (instance? Button
                    (get-child-by-id motivation-template
-                                    "motivation_x_attractor")))
+                                    template-id-motivation-attractor)))
 
 (expect (instance? BubbleChart
                    (get-child-by-id editor-template
-                                    "attractors_chart")))
+                                    id-attractors-chart)))
 
 (expect (instance? BubbleChart
                    (get-child-by-id editor-template
-                                    "pad_chart")))
+                                    id-pad-chart)))
 
 (expect (instance? ScrollPane
                    (get-child-by-id editor-template
