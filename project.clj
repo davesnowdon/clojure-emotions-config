@@ -8,5 +8,8 @@
                  [clj-time "0.8.0"]
                  [org.clojars.ato/clojure-jsr223 "1.5.1"]
                  [reagi "0.6.3"]
-                 [emotions "0.2.2"]]
+                 [emotions "0.2.2"]
+                 [expectations "1.4.56"]]
+  :profile {:dev {:dependencies [[expectations "1.4.56"]]}}
+  :plugins [[lein-autoexpect "1.0"]]
   :main emotions-config.core)
